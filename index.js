@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Image, Text } from 'react-native';
+import { Image } from 'react-native';
 import * as flags from './src';
 
 const Flag = props => {
