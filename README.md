@@ -1,53 +1,92 @@
 
 # react-native-flags-kit
 
-## Getting started
+## Installation
 
 `$ npm install react-native-flags-kit --save`
 
-### Mostly automatic installation
-
-`$ react-native link react-native-flags-kit`
-
-### Manual installation
-
-
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-flags-kit` and add `RNFlagsKit.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNFlagsKit.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
-
-#### Android
-
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNFlagsKitPackage;` to the imports at the top of the file
-  - Add `new RNFlagsKitPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-flags-kit'
-  	project(':react-native-flags-kit').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-flags-kit/android')
-  	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-flags-kit')
-  	```
-
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNFlagsKit.sln` in `node_modules/react-native-flags-kit/windows/RNFlagsKit.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Flags.Kit.RNFlagsKit;` to the usings at the top of the file
-  - Add `new RNFlagsKitPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
-
 ## Usage
-```javascript
-import RNFlagsKit from 'react-native-flags-kit';
 
-// TODO: What to do with the module?
-RNFlagsKit;
+```javascript
+import Flag from 'react-native-flags-kit';
+
+<Flag
+  code="DE"
+  size={32}
+/>
 ```
-  
+
+## Full usage code
+
+```javascript
+import React, {Component} from 'react';
+import {
+  Platform,
+  StyleSheet,
+  View,
+} from 'react-native';
+
+import Flag from 'react-native-flags-kit';
+
+type Props = {};
+export default class App extends Component<Props> {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Flag
+          code="KH"
+          size={16}
+        />
+        <Flag
+          code="US"
+          size={32}
+        />
+        <Flag
+          code="MY"
+          size={32}
+        />
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+    fontSize: 30,
+  },
+});
+```
+
+## Props
+
+| Props | Type | Default | Description |
+|:----------|:----------|:----------|:----------|
+| code | string | | The ISO code of a flag, for example "KH", "US" or "GB". |
+| type | string (flat or shiny) | shiny | Display the flags shiny or flat. |
+| size | number (16, 24, 32, 48 or 64) | 64 | The size of a flag in points. |
+| style (optional) |  |  | Allows additional styles to be passed through. |
+
+## Wrap Up
+
+If you think any of the `react-native-flags-kit` can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
+
+## Contribution
+
+We'd love to have your helping hand on contributions to `react-native-flags-kit` by forking and sending a pull request!
+
+Your contributions are heartily ♡ welcome, recognized and appreciated. (✿◠‿◠)
+
+How to contribute:
+
+- Open pull request with improvements
+- Discuss ideas in issues
+- Spread the word
+- Reach out with any feedback
+
+## License
+
+The MIT License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
