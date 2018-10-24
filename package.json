@@ -1,21 +1,35 @@
 {
   "name": "react-native-flags-kit",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "React Native Flags Kit - React Native Flag component with all the flags in the world.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "react",
+    "react-component",
+    "flags",
+    "react-native-flags",
+    "react-native-flags-kit",
+    "react-flags"
   ],
-  "author": "",
-  "license": "",
+  "author": "Bunlong",
+  "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
+    "react-native": "^0.41.2"
   },
   "dependencies": {
     "prop-types": "^15.6.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/themodernjavascript/react-native-flags-kit/issues"
+  },
+  "homepage": "https://github.com/themodernjavascript/react-native-flags-kit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themodernjavascript/react-native-flags-kit.git"
+  },
+  "nativePackage": true
 }
