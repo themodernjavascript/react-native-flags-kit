@@ -1,5 +1,8 @@
-
 # react-native-flags-kit
+
+
+![react-native-custom-keyboard-kit](./react-native-flags-kit.png)
+
 
 ## Installation
 
