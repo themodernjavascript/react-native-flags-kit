@@ -84,6 +84,8 @@ const styles = StyleSheet.create({
 });
 ```
 
+You can find the source code [here](./examples/FlagsKitBasic).
+
 ## Props
 
 | Props | Type | Default | Description |
