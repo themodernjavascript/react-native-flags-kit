@@ -37,16 +37,36 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Flag
-          code="KH"
-          size={16}
+          code="US"
+          size={64}
         />
         <Flag
-          code="US"
-          size={32}
+          code="JP"
+          size={64}
+        />
+        <Flag
+          code="CN"
+          size={64}
+        />
+        <Flag
+          code="RU"
+          size={64}
+        />
+        <Flag
+          code="KH"
+          size={64}
+        />
+        <Flag
+          code="VN"
+          size={64}
+        />
+        <Flag
+          code="SG"
+          size={64}
         />
         <Flag
           code="MY"
-          size={32}
+          size={64}
         />
       </View>
     );
