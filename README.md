@@ -1,8 +1,8 @@
 # react-native-flags-kit
 
+React Native Flags Kit - React Native Flag component with all the flags in the world. [![version](https://img.shields.io/npm/v/react-native-flags-kit.svg?style=flat-square)](https://www.npmjs.com/package/react-native-flags-kit) [![downloads](https://img.shields.io/npm/dm/react-native-flags-kit.svg?style=flat-square)](https://www.npmjs.com/package/react-native-flags-kit) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](http://opensource.org/licenses/MIT).
 
 ![react-native-custom-keyboard-kit](./react-native-flags-kit.png)
-
 
 ## Installation
 
@@ -90,7 +90,7 @@ You can find the source code [here](./examples/FlagsKitBasic).
 
 | Props | Type | Default | Description |
 |:----------|:----------|:----------|:----------|
-| code | string | | The ISO code of a flag, for example "KH", "US" or "GB". |
+| code | string | | [The ISO code of a flag](https://www.translatorscafe.com/cafe/ISO-3166-Country-Codes.htm), for example "KH", "US" or "GB". |
 | type | string (flat or shiny) | shiny | Display the flags shiny or flat. |
 | size | number (16, 24, 32, 48 or 64) | 64 | The size of a flag in points. |
 | style (optional) |  |  | Allows additional styles to be passed through. |
