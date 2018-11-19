@@ -92,7 +92,7 @@ You can find the source code [here](./examples/FlagsKitBasic).
 |:----------|:----------|:----------|:----------|
 | code | string | | [The ISO code of a flag](https://www.translatorscafe.com/cafe/ISO-3166-Country-Codes.htm), for example "KH", "US" or "GB". |
 | type | string (flat or shiny) | shiny | Display the flags shiny or flat. |
-| size | number (16, 24, 32, 48 or 64) | 64 | The size of a flag in points. |
+| size | number (16, 24, 32, 48 or 64) | 64 | The size of a flag in points (Note: Setting a size of any other values will cause and error). |
 | style (optional) |  |  | Allows additional styles to be passed through. |
 
 ## Wrap Up
