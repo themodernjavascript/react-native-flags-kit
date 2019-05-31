@@ -21,7 +21,7 @@
     "react-native": ">=0.41.0"
   },
   "dependencies": {
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.7.2"
   },
   "bugs": {
     "url": "https://github.com/themodernjavascript/react-native-flags-kit/issues"
