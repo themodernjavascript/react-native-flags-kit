@@ -4,6 +4,12 @@ React Native Flags Kit - React Native Flag component with all the flags in the w
 
 ![react-native-custom-keyboard-kit](./react-native-flags-kit.png)
 
+| Version | React Native Support |
+|---|---|
+| 1.0.x | 0.41 - 0.59 |
+
+*Complies with [react-native-version-support-table](https://github.com/dangnelson/react-native-version-support-table)*
+
 ## Installation
 
 `$ npm install react-native-flags-kit --save`
